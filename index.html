@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+
+  <body>
+    <div id="meme-maker">
+      <h1>Meme Maker</h1>
+
+      <section id="meme-gen">
+        <section id="meme-preview">
+          <div class="meme">
+            <p class="top">top</p>
+            <img src="images/1.jpg" />
+            <p class="bot">bot</p>
+          </div>
+        </section>
+
+        <form id="meme-form">
+          <div class="image-add">
+            <input type="url" placeholder="image url" /><button class="add">
+              add
+            </button>
+          </div>
+          <div id="meme-form-list">
+            <img src="images/1.jpg" />
+            <img src="images/2.jpg" />
+            <img src="images/3.jpg" />
+          </div>
+          <hr />
+          <div class="top-text-group">
+            <label for="top-text">Top Text</label>
+            <input type="text" id="top-text" placeholder="something" />
+            <input type="color" id="top-col" value="#ffffff" />
+            <input type="number" id="top-px" value="16" />
+            <label for="top-px">px</label>
+          </div>
+          <div class="bot-text-group">
+            <label for="bot-text">Bottom Text</label>
+            <input type="text" id="bot-text" placeholder="quirky" />
+            <input type="color" id="bot-col" value="#ffffff" />
+            <input type="number" id="bot-px" value="16" />
+            <label for="bot-px">px</label>
+          </div>
+          <button class="save">save</button>
+        </form>
+      </section>
+
+      <section id="meme-storage">
+        <h2>saved memes</h2>
+        <div id="meme-storage-list">
+          <div class="meme">
+            <p class="top">nope</p>
+            <img src="images/3.jpg" />
+            <p class="bot">yup</p>
+          </div>
+          <div class="meme">
+            <p class="top">what</p>
+            <img src="images/2.jpg" />
+            <p class="bot">why</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
